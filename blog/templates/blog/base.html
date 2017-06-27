@@ -7,12 +7,13 @@
 
         <title>Django Girls blog</title>
 
-        <link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}?t=5">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}?t=7">
         <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 <!--?t={% now 'U' %}-->
     </head>
     <body>
         <div class = "page-header">
+            <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
             <h1><a href="/">Django Girls Blog</a></h1>
         </div>
 
